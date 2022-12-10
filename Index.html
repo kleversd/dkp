@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/342fa4aac2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>kleverson alves</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./img/logotipo-01.png" width="140" height="140">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/kleversd">github </a>
+            </li>
+            <li><a target="_blank" href="mailto:krevaun@gmail.com">email</a>
+            </li>
+            <li><a target="_blank" href="https://wa.me/+351963160299">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div>
+                <h1>kleverson alves</h1>
+                <h5>Front End Developer</h5>
+            </div>
+
+            <div onclick=displayAbout() id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, suscipit temporibus reprehenderit
+                    aperiam aspernatur aut rem ea consequatur natus 
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar</button>
+                </form>
+            </div>
+            <div class="flex">
+                <div>
+                    <img src="./img/developer-01.jpg" width="300" height="130">
+                    <p>
+                        <a target="_blank" href="https://kleversd.github.io/projeto-omma/">Projeto Figma omma</a> 
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/developer-02.jpg" width="300" height="130">
+                    <p>
+                        <a target="_blank" href="https://kleversd.github.io/dindin/">Projeto Figma dindin </a>
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/developer-03.jpg" width="300" height="130">
+                    <p>
+                        Projeto kai Pimenta
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/developer-04.jpg" width="300" height="130">
+                    <p>
+                        Projeto erik Borges
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
